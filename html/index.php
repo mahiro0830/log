@@ -14,8 +14,12 @@
             'link'  => '3-2-5/main.php',
         ),
         array(
-            'title' => '静的変数の動作確認',
-            'link'  => 'static-variable/main.php',
+            'title' => '静的変数の動作確認（1）',
+            'link'  => 'static-variable1/main.php',
+        ),
+        array(
+            'title' => '静的変数の動作確認（2）',
+            'link'  => 'static-variable2/main.php',
         ),
         array(
             'title' => 'シングルトンの動作確認',
