@@ -25,6 +25,10 @@
             'title' => 'シングルトンの動作確認',
             'link'  => 'singleton/main.php',
         ),
+        array(
+            'title' => 'クラスの継承（抽象クラス）',
+            'link'  => 'abstract/main.php',
+        ),
     );
 
     echo '<ul>';
