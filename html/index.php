@@ -13,6 +13,10 @@
             'title' => 'インスタンスを別クラスに渡す',
             'link'  => '3-2-5/main.php',
         ),
+        array(
+            'title' => 'シングルトン',
+            'link'  => 'singleton/main.php',
+        ),
     );
 
     echo '<ul>';
