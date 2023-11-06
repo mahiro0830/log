@@ -1,36 +1,54 @@
 <?php
-interface Drawable
+/**
+ * Sendable インターフェイスの定義
+ */
+interface Sendable
 {
-    public function draw();
+    public function sendMessage();
 }
 
-class Circle implements Drawable
+/**
+ * Slackメール送信Botのクラスを定義
+ */
+class SlackBot implements Sendable
 {
-    public function draw()
+    /**
+     * メッセージを送信するメソッド
+     */
+    public function sendMessage()
     {
-        echo '円を描写します。<br />';
+        echo 'Slackにメッセージを送信しました。<br />';
     }
 }
 
-class Rectangle implements Drawable
+/**
+ * ChatWorksメール送信Botクラスを定義
+ */
+class ChatworksBot implements Sendable
 {
-    public function draw()
+    /**
+     * メッセージを送信するメソッド
+     */
+    public function sendMessage()
     {
-        echo '四角形を描写します。<br />';
+        echo 'ChatWorksにメッセージを送信しました。<br />';
     }
 }
 
-class Drawer
+/**
+ * メッセージ送信クラスを定義
+ */
+class MessageSender
 {
-    public function shapeDraw( Drawable $drawable )
+    public function sender( Sendable $sendable )
     {
-        $drawable->draw();
+        $sendable->sendMessage();
     }
 }
 
-$drawer = new Drawer();
-$circle    = new Circle();
-$rectangle = new Rectangle();
+$messageSender = new MessageSender();
+$slackBot      = new SlackBot();
+$chatworksBot  = new ChatworksBot();
 
-$drawer->shapeDraw( $circle );
-$drawer->shapeDraw( $rectangle );
+$messageSender->sender( $slackBot );
+$messageSender->sender( $chatworksBot );
