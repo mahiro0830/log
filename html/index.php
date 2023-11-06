@@ -29,6 +29,10 @@
             'title' => 'クラスの継承（抽象クラス）',
             'link'  => 'abstract/main.php',
         ),
+        array(
+            'title' => 'インターフェイス',
+            'link'  => 'interface/main.php',
+        ),
     );
 
     echo '<ul>';
