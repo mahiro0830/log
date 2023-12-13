@@ -33,6 +33,10 @@
             'title' => 'インターフェイス',
             'link'  => 'interface/main.php',
         ),
+        array(
+            'title' => 'インターフェイス2',
+            'link'  => 'interface2/main.php',
+        ),
     );
 
     echo '<ul>';
